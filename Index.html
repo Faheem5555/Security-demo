@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="user-list">
+        <p> User ID: 12345 </p>
+        <button onclick="openDemo()">Open Demo</button>
+    </div>
+
+    <div id="demo-modal" style="display: none">
+        <div id="demo-controls" style="display: flex; justify-content: space-between; align-items: center; margin: 20px">
+            <div>
+                <button onclick="takeScreenshot()">Take Screenshot</button>
+                <button onclick="recordVideo()">Record Video</button>
+                <button onclick="flipCameras()">Flip Cameras</button>
+            </div>
+            <div style="display: flex; align-items: center; justify-content: center;">
+                <img id="live-feed" style="height: 300px; width: 400px; object-fit: cover; object-position: center;" alt="Live Feed" src="" />
+            </div>
+        </div>
+    </div>
+
+    <script src="js/demo.js"></script>
+</body>
+</html>
